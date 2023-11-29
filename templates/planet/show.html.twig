@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Planet{% endblock %}
+
+{% block body %}
+<div class="m-4 p-4 bg-gray-800 rounded-lg">
+    <h1 class="text-xl font-semibold text-white mb-4">Planet</h1>
+
+    <table class="min-w-full bg-gray-800 text-white">
+        <tbody class="bg-gray-700 divide-y divide-gray-600">
+            <tr>
+                <th class="w-1/6 px-2 py-4 text-left text-xs font-medium text-gray-400 uppercase tracking-wider">Photo</th>
+                <td class="px-2 py-4">
+                    <img
+                        class="flex-shrink-0 w-8 h-8 bg-gray-600 rounded-full group-hover:bg-gray-500 transition duration-300 ease-in-out"
+                        src="{{ asset('images/'~planet.imageFilename) }}"
+                        alt="Image of {{ planet.name }}"
+                    >
+                </td>
+            </tr>
+            <tr>
+                <th class="px-2 py-4 text-left text-xs font-medium text-gray-400 uppercase tracking-wider">Name</th>
+                <td class="px-2 py-4">{{ planet.name }}</td>
+            </tr>
+            <tr>
+                <th class="px-2 py-4 text-left text-xs font-medium text-gray-400 uppercase tracking-wider">Distance</th>
+                <td class="px-2 py-4 whitespace-nowrap">{{ planet.lightYearsFromEarth }}</td>
+            </tr>
+            <tr>
+                <td class="px-2 py-4" colspan="2">{{ planet.description }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="flex space-x-4 mt-4">
+        <a href="{{ path('app_planet_index') }}" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700">
+            Back to list
+        </a>
+
+        <a href="{{ path('app_planet_edit', {'id': planet.id}) }}" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-green-600 hover:bg-green-700">
+            Edit
+        </a>
+
+        {{ include('planet/_delete_form.html.twig') }}
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,86 @@
+{
+    "type": "project",
+    "license": "proprietary",
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=8.2",
+        "ext-ctype": "*",
+        "ext-iconv": "*",
+        "doctrine/doctrine-bundle": "^2.10",
+        "doctrine/doctrine-migrations-bundle": "^3.2",
+        "doctrine/orm": "^2.16",
+        "symfony/console": "6.4.x-dev",
+        "symfony/dotenv": "6.4.x-dev",
+        "symfony/flex": "^2",
+        "symfony/form": "6.4.x-dev",
+        "symfony/framework-bundle": "6.4.x-dev",
+        "symfony/monolog-bundle": "^3.0",
+        "symfony/runtime": "6.4.x-dev",
+        "symfony/security-csrf": "6.4.x-dev",
+        "symfony/twig-bundle": "6.4.x-dev",
+        "symfony/validator": "6.4.x-dev",
+        "symfony/yaml": "6.4.x-dev",
+        "twig/extra-bundle": "^2.12|^3.0",
+        "twig/twig": "^2.12|^3.0"
+    },
+    "config": {
+        "platform": {
+            "php": "8.2.7"
+        },
+        "allow-plugins": {
+            "php-http/discovery": true,
+            "symfony/flex": true,
+            "symfony/runtime": true
+        },
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\Tests\\": "tests/"
+        }
+    },
+    "replace": {
+        "symfony/polyfill-ctype": "*",
+        "symfony/polyfill-iconv": "*",
+        "symfony/polyfill-php72": "*",
+        "symfony/polyfill-php73": "*",
+        "symfony/polyfill-php74": "*",
+        "symfony/polyfill-php80": "*",
+        "symfony/polyfill-php81": "*"
+    },
+    "scripts": {
+        "auto-scripts": {
+            "cache:clear": "symfony-cmd",
+            "assets:install %PUBLIC_DIR%": "symfony-cmd"
+        },
+        "post-install-cmd": [
+            "@auto-scripts"
+        ],
+        "post-update-cmd": [
+            "@auto-scripts"
+        ]
+    },
+    "conflict": {
+        "symfony/symfony": "*"
+    },
+    "extra": {
+        "symfony": {
+            "allow-contrib": false,
+            "require": "6.4.*",
+            "docker": true
+        }
+    },
+    "require-dev": {
+        "doctrine/doctrine-fixtures-bundle": "^3.4",
+        "symfony/debug-bundle": "6.4.x-dev",
+        "symfony/maker-bundle": "^1.51",
+        "symfony/stopwatch": "6.4.x-dev",
+        "symfony/web-profiler-bundle": "6.4.x-dev",
+        "zenstruck/foundry": "^1.36"
+    }
+}
