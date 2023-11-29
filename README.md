@@ -17,6 +17,7 @@ or email me at ryan@symfonycasts.com.
 First, clone the repository and install the dependencies:
 
 ```
+git clone git@github.com:weaverryan/sfcon_2023_ux_workshop.git
 composer install
 ```
 
