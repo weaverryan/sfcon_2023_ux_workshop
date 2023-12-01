@@ -6,4 +6,7 @@
  */
 import './styles/app.css'
 
+import greet from './lib/greeting.js';
+
+greet('Ryan');
 console.log('This log comes from assets/app.js - welcome to AssetMapper! 🎉')
