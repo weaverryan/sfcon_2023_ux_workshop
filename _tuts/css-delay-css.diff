@@ -1,0 +1,13 @@
+diff --git a/assets/lib/greeting.js b/assets/lib/greeting.js
+index c7d5204..b777ac4 100644
+--- a/assets/lib/greeting.js
++++ b/assets/lib/greeting.js
+@@ -1,5 +1,6 @@
+-import '../styles/alien.css';
+-
+ export default function greeting(Ryan) {
++    setTimeout(() => {
++        import('../styles/alien.css');
++    }, 4000);
+     console.log(`Hello ${Ryan}!`);
+ }
