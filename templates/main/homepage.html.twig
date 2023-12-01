@@ -27,7 +27,7 @@
                 >
                 <div class="whitespace-nowrap m-2 mr-4">{{ voyages|length }} results</div>
             </form>
-            <turbo-frame id="voyage-list">
+            <turbo-frame id="voyage-list" data-turbo-action="advance">
                 <div class="bg-gray-800 p-4 rounded">
                     <table class="w-full text-white">
                         <thead>
