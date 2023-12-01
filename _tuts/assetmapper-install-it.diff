@@ -41,28 +41,34 @@ index 0000000..dd6181a
 +    background-color: skyblue;
 +}
 diff --git a/composer.json b/composer.json
-index a9c5a08..a4d1f4d 100644
+index bcbe05b..68a06da 100644
 --- a/composer.json
 +++ b/composer.json
-@@ -9,6 +9,7 @@
-         "doctrine/doctrine-bundle": "^2.10",
-         "doctrine/doctrine-migrations-bundle": "^3.2",
+@@ -12,6 +12,7 @@
          "doctrine/orm": "^2.16",
+         "pagerfanta/doctrine-orm-adapter": "4.x-dev",
+         "pagerfanta/twig": "4.x-dev",
 +        "symfony/asset-mapper": "6.4.*",
          "symfony/console": "6.4.x-dev",
          "symfony/dotenv": "6.4.x-dev",
          "symfony/flex": "^2",
 diff --git a/composer.lock b/composer.lock
-index ce27303..4d8ef50 100644
+index 62cdc47..f0156a2 100644
 --- a/composer.lock
 +++ b/composer.lock
-@@ -4,8 +4,90 @@
+@@ -4,7 +4,7 @@
          "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
          "This file is @generated automatically"
      ],
--    "content-hash": "5a321db7046069535ef0c07d426e25d1",
-+    "content-hash": "ee6e1e3bf0442eb89a7d5c31983eb0e2",
+-    "content-hash": "5c4cadebd0d21747f4c4d868eb0340ad",
++    "content-hash": "fe11d4eb07d71f8ed5e52410d5e767dc",
      "packages": [
+         {
+             "name": "babdev/pagerfanta-bundle",
+@@ -94,6 +94,88 @@
+             ],
+             "time": "2023-09-15T21:34:09+00:00"
+         },
 +        {
 +            "name": "composer/semver",
 +            "version": "dev-main",
@@ -148,7 +154,7 @@ index ce27303..4d8ef50 100644
          {
              "name": "doctrine/cache",
              "version": "2.2.x-dev",
-@@ -1648,6 +1730,85 @@
+@@ -1870,6 +1952,85 @@
              },
              "time": "2021-07-14T16:46:02+00:00"
          },
@@ -234,9 +240,9 @@ index ce27303..4d8ef50 100644
          {
              "name": "symfony/cache",
              "version": "6.4.x-dev",
-@@ -2991,6 +3152,178 @@
+@@ -3213,6 +3374,178 @@
              ],
-             "time": "2023-11-20T16:10:54+00:00"
+             "time": "2023-12-01T16:35:22+00:00"
          },
 +        {
 +            "name": "symfony/http-client",
@@ -452,10 +458,10 @@ index 0000000..9be0d4c
 +    ],
 +];
 diff --git a/symfony.lock b/symfony.lock
-index b80ba6b..575420f 100644
+index 174b2da..acbb74f 100644
 --- a/symfony.lock
 +++ b/symfony.lock
-@@ -38,6 +38,21 @@
+@@ -41,6 +41,21 @@
              "migrations/.gitignore"
          ]
      },
