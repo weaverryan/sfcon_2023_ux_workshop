@@ -1,0 +1,26 @@
+diff --git a/assets/styles/app.css b/assets/styles/app.css
+index f52a8ac..ca895d3 100644
+--- a/assets/styles/app.css
++++ b/assets/styles/app.css
+@@ -2,6 +2,6 @@
+ @tailwind components;
+ @tailwind utilities;
+ 
+-body {
+-    background-color: skyblue;
++aside .aside\:block {
++    display: block;
+ }
+diff --git a/templates/planet/show.html.twig b/templates/planet/show.html.twig
+index 08f2870..3684998 100644
+--- a/templates/planet/show.html.twig
++++ b/templates/planet/show.html.twig
+@@ -33,7 +33,7 @@
+             </tbody>
+         </table>
+ 
+-        <div class="mt-2">
++        <div class="mt-2 hidden aside:block">
+             <a href="{{ path('app_homepage') }}">&lt;-- Back</a>
+             <a href="{{ path('app_planet_edit', {
+                 id: planet.id,
