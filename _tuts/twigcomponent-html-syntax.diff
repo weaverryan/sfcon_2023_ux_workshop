@@ -1,0 +1,13 @@
+diff --git a/templates/voyage/_form.html.twig b/templates/voyage/_form.html.twig
+index 3b857c9..c29e43b 100644
+--- a/templates/voyage/_form.html.twig
++++ b/templates/voyage/_form.html.twig
+@@ -1,7 +1,5 @@
+ {{ form_start(form) }}
+     {{ form_widget(form) }}
+ 
+-    {% component 'Button' %}
+-        {% block content %}{{ button_label|default('Save') }}{% endblock %}
+-    {% endcomponent %}
++    <twig:Button>{{ button_label|default('Save') }}</twig:Button>
+ {{ form_end(form) }}
