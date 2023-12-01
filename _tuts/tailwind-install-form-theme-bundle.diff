@@ -1,8 +1,8 @@
 diff --git a/composer.json b/composer.json
-index da2cc67..e2842cb 100644
+index d114240..aa7c9c8 100644
 --- a/composer.json
 +++ b/composer.json
-@@ -23,6 +23,7 @@
+@@ -26,6 +26,7 @@
          "symfony/validator": "6.4.x-dev",
          "symfony/yaml": "6.4.x-dev",
          "symfonycasts/tailwind-bundle": "dev-main",
@@ -10,7 +10,7 @@ index da2cc67..e2842cb 100644
          "twig/extra-bundle": "^2.12|^3.0",
          "twig/twig": "^2.12|^3.0"
      },
-@@ -73,7 +74,7 @@
+@@ -76,7 +77,7 @@
      },
      "extra": {
          "symfony": {
@@ -20,19 +20,19 @@ index da2cc67..e2842cb 100644
              "docker": true
          }
 diff --git a/composer.lock b/composer.lock
-index 2265856..8b04acc 100644
+index 0a99b9d..00b914f 100644
 --- a/composer.lock
 +++ b/composer.lock
 @@ -4,7 +4,7 @@
          "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
          "This file is @generated automatically"
      ],
--    "content-hash": "80d41920b067979f2c4de74c309d3358",
-+    "content-hash": "079a09471ae7c0a09947ae44f441d6ac",
+-    "content-hash": "234052197b971a6313483950971bb89e",
++    "content-hash": "72bf569770a15d66a17cfadbe83ebde5",
      "packages": [
          {
-             "name": "composer/semver",
-@@ -1417,6 +1417,73 @@
+             "name": "babdev/pagerfanta-bundle",
+@@ -1505,6 +1505,73 @@
              },
              "time": "2023-08-16T21:49:04+00:00"
          },
@@ -106,7 +106,7 @@ index 2265856..8b04acc 100644
          {
              "name": "monolog/monolog",
              "version": "dev-main",
-@@ -1730,6 +1797,58 @@
+@@ -1952,6 +2019,58 @@
              },
              "time": "2021-07-14T16:46:02+00:00"
          },
@@ -165,7 +165,7 @@ index 2265856..8b04acc 100644
          {
              "name": "symfony/asset",
              "version": "6.4.x-dev",
-@@ -5725,6 +5844,121 @@
+@@ -5947,6 +6066,121 @@
              },
              "time": "2023-11-30T16:44:44+00:00"
          },
@@ -287,7 +287,7 @@ index 2265856..8b04acc 100644
          {
              "name": "twig/extra-bundle",
              "version": "3.x-dev",
-@@ -6644,6 +6878,7 @@
+@@ -6868,6 +7102,7 @@
          "symfony/validator": 20,
          "symfony/yaml": 20,
          "symfonycasts/tailwind-bundle": 20,
@@ -296,21 +296,21 @@ index 2265856..8b04acc 100644
          "symfony/stopwatch": 20,
          "symfony/web-profiler-bundle": 20
 diff --git a/config/bundles.php b/config/bundles.php
-index d8894f2..67502dc 100644
+index 5ba3544..9f3f8d1 100644
 --- a/config/bundles.php
 +++ b/config/bundles.php
-@@ -13,4 +13,6 @@ return [
-     Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle::class => ['dev' => true, 'test' => true],
+@@ -14,4 +14,6 @@ return [
      Zenstruck\Foundry\ZenstruckFoundryBundle::class => ['dev' => true, 'test' => true],
+     BabDev\PagerfantaBundle\BabDevPagerfantaBundle::class => ['all' => true],
      Symfonycasts\TailwindBundle\SymfonycastsTailwindBundle::class => ['all' => true],
 +    TalesFromADev\Twig\Extra\Tailwind\Bridge\Symfony\Bundle\TalesFromADevTwigExtraTailwindBundle::class => ['all' => true],
 +    TalesFromADev\FlowbiteBundle\FlowbiteBundle::class => ['all' => true],
  ];
 diff --git a/symfony.lock b/symfony.lock
-index cc6d647..e3c4529 100644
+index 1784a45..da84f5b 100644
 --- a/symfony.lock
 +++ b/symfony.lock
-@@ -183,6 +183,18 @@
+@@ -186,6 +186,18 @@
      "symfonycasts/tailwind-bundle": {
          "version": "dev-main"
      },
