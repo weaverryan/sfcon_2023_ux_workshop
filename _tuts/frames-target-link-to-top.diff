@@ -1,0 +1,13 @@
+diff --git a/templates/planet/show.html.twig b/templates/planet/show.html.twig
+index 09d8489..08f2870 100644
+--- a/templates/planet/show.html.twig
++++ b/templates/planet/show.html.twig
+@@ -37,7 +37,7 @@
+             <a href="{{ path('app_homepage') }}">&lt;-- Back</a>
+             <a href="{{ path('app_planet_edit', {
+                 id: planet.id,
+-            }) }}">Edit</a>
++            }) }}" data-turbo-frame="_top">Edit</a>
+         </div>
+     </turbo-frame>
+ 

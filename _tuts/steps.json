@@ -104,7 +104,172 @@
             "id": "stimulus-use-controller",
             "name": "Stimulus: Use controller",
             "description": null
+        },
+        {
+            "id": "turbo-install-bundle",
+            "name": "Turbo: install bundle",
+            "description": null
+        },
+        {
+            "id": "turbo-upgrade-to-8",
+            "name": "Turbo: Upgrade to 8",
+            "description": null
+        },
+        {
+            "id": "turbo-view-transitions-meta",
+            "name": "Turbo: view transitions meta",
+            "description": null
+        },
+        {
+            "id": "frames-add-frame-around-planet-list",
+            "name": "Frames: Add frame around planet-list",
+            "description": null
+        },
+        {
+            "id": "frames-add-matching-frame-in-show",
+            "name": "Frames: Add matching frame in show",
+            "description": null
+        },
+        {
+            "id": "frames-add-back-link",
+            "name": "Frames: Add back link",
+            "description": null
+        },
+        {
+            "id": "frames-add-edit-link",
+            "name": "Frames: Add edit link",
+            "description": null
+        },
+        {
+            "id": "frames-target-link-to-top",
+            "name": "Frames: Target link to top",
+            "description": null
+        },
+        {
+            "id": "frames-conditionally-hide-elements",
+            "name": "Frames: Conditionally hide elements",
+            "description": null
+        },
+        {
+            "id": "datatables-add-frame-around-table",
+            "name": "DataTables: Add frame around table",
+            "description": null
+        },
+        {
+            "id": "datatables-advance-the-frame",
+            "name": "DataTables: advance the frame",
+            "description": null
+        },
+        {
+            "id": "datatables-add-transition",
+            "name": "DataTables: Add transition",
+            "description": null
+        },
+        {
+            "id": "datatables-target-search-on-frame",
+            "name": "DataTables: Target search on frame",
+            "description": null
+        },
+        {
+            "id": "toast-render-flashes-html-twig",
+            "name": "Toast: Render _flashes.html.twig",
+            "description": null
+        },
+        {
+            "id": "toast-copy-fancier-markup",
+            "name": "Toast: Copy fancier markup",
+            "description": null
+        },
+        {
+            "id": "toast-closeable-controller",
+            "name": "Toast: Closeable controller",
+            "description": null
+        },
+        {
+            "id": "toast-install-stimulus-use",
+            "name": "Toast: Install stimulus-use",
+            "description": null
+        },
+        {
+            "id": "toast-close-transition",
+            "name": "Toast: close transition",
+            "description": null
+        },
+        {
+            "id": "twigcomponent-install-it",
+            "name": "TwigComponent: install it",
+            "description": null
+        },
+        {
+            "id": "twigcomponent-create-button-html-twig",
+            "name": "TwigComponent: Create Button.html.twig",
+            "description": null
+        },
+        {
+            "id": "twigcomponent-add-content-block",
+            "name": "TwigComponent: Add content block",
+            "description": null
+        },
+        {
+            "id": "twigcomponent-html-syntax",
+            "name": "TwigComponent: HTML syntax",
+            "description": null
+        },
+        {
+            "id": "twigcomponent-output-attributes",
+            "name": "TwigComponent: Output attributes",
+            "description": null
+        },
+        {
+            "id": "twigcomponent-move-padding-into-form",
+            "name": "TwigComponent: Move padding into _form",
+            "description": null
+        },
+        {
+            "id": "twigcomponent-add-php-class",
+            "name": "TwigComponent: Add PHP Class",
+            "description": null
+        },
+        {
+            "id": "twigcomponent-pass-in-success-variant",
+            "name": "TwigComponent: Pass in success variant",
+            "description": null
+        },
+        {
+            "id": "twigcomponent-variantclasses",
+            "name": "TwigComponent: variantClasses",
+            "description": null
+        },
+        {
+            "id": "twigcomponent-point-tailwind-at-components",
+            "name": "TwigComponent: Point Tailwind at components",
+            "description": null
+        },
+        {
+            "id": "modal-add-a-dialog-element",
+            "name": "Modal: Add a dialog element",
+            "description": null
+        },
+        {
+            "id": "modal-open-dialog-as-modal",
+            "name": "Modal: open dialog as modal",
+            "description": null
+        },
+        {
+            "id": "modal-remove-temporary-dialog",
+            "name": "Modal: remove temporary dialog",
+            "description": null
+        },
+        {
+            "id": "modal-copy-in-modal-component",
+            "name": "Modal: Copy in Modal component",
+            "description": null
+        },
+        {
+            "id": "modal-copy-in-modal-controller",
+            "name": "Modal: Copy in modal controller",
+            "description": null
         }
     ],
-    "sha": "a259a157a69d6e4755b20e594aa0ec9c5e067c76"
+    "sha": "d187c2237fa4f1411e8ec7861726dddddbc79b4f"
 }
