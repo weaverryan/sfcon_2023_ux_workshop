@@ -1,0 +1,28 @@
+diff --git a/assets/app.js b/assets/app.js
+index e3b03ad..7603fa2 100644
+--- a/assets/app.js
++++ b/assets/app.js
+@@ -5,5 +5,7 @@
+  * which should already be in your base.html.twig.
+  */
+ import './styles/app.css'
++import greet from './lib/greeting.js';
+ 
++greet('Ryan');
+ console.log('This log comes from assets/app.js - welcome to AssetMapper! 🎉')
+diff --git a/templates/base.html.twig b/templates/base.html.twig
+index b4a68fd..56a9fe3 100644
+--- a/templates/base.html.twig
++++ b/templates/base.html.twig
+@@ -10,11 +10,6 @@
+ 
+         {% block javascripts %}
+             {{ importmap('app') }}
+-            <script type="module">
+-                import greet from '{{ asset('lib/greeting.js') }}';
+-
+-                greet('Ryan');
+-            </script>
+         {% endblock %}
+     </head>
+     <body>
