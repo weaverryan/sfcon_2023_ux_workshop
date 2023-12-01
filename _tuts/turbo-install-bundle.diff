@@ -1,0 +1,194 @@
+diff --git a/assets/controllers.json b/assets/controllers.json
+index a1c6e90..29ea244 100644
+--- a/assets/controllers.json
++++ b/assets/controllers.json
+@@ -1,4 +1,15 @@
+ {
+-    "controllers": [],
++    "controllers": {
++        "@symfony/ux-turbo": {
++            "turbo-core": {
++                "enabled": true,
++                "fetch": "eager"
++            },
++            "mercure-turbo-stream": {
++                "enabled": false,
++                "fetch": "eager"
++            }
++        }
++    },
+     "entrypoints": []
+ }
+diff --git a/composer.json b/composer.json
+index 065ab9e..63e1f38 100644
+--- a/composer.json
++++ b/composer.json
+@@ -24,6 +24,7 @@
+         "symfony/security-csrf": "6.4.x-dev",
+         "symfony/stimulus-bundle": "2.x-dev",
+         "symfony/twig-bundle": "6.4.x-dev",
++        "symfony/ux-turbo": "2.x-dev",
+         "symfony/validator": "6.4.x-dev",
+         "symfony/yaml": "6.4.x-dev",
+         "symfonycasts/tailwind-bundle": "dev-main",
+diff --git a/composer.lock b/composer.lock
+index 0611c5a..9d52fbf 100644
+--- a/composer.lock
++++ b/composer.lock
+@@ -4,7 +4,7 @@
+         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+         "This file is @generated automatically"
+     ],
+-    "content-hash": "92bccdb24b163dc0fa4d5ffca67dad56",
++    "content-hash": "3d38fe275183e02de63dce9619c0c7ad",
+     "packages": [
+         {
+             "name": "babdev/pagerfanta-bundle",
+@@ -5753,6 +5753,103 @@
+             ],
+             "time": "2023-11-07T14:57:07+00:00"
+         },
++        {
++            "name": "symfony/ux-turbo",
++            "version": "2.x-dev",
++            "source": {
++                "type": "git",
++                "url": "https://github.com/symfony/ux-turbo.git",
++                "reference": "1be97f191f166ad745f777cafdaa5609d959984d"
++            },
++            "dist": {
++                "type": "zip",
++                "url": "https://api.github.com/repos/symfony/ux-turbo/zipball/1be97f191f166ad745f777cafdaa5609d959984d",
++                "reference": "1be97f191f166ad745f777cafdaa5609d959984d",
++                "shasum": ""
++            },
++            "require": {
++                "php": ">=8.1",
++                "symfony/stimulus-bundle": "^2.9.1"
++            },
++            "conflict": {
++                "symfony/flex": "<1.13"
++            },
++            "require-dev": {
++                "doctrine/doctrine-bundle": "^2.4.3",
++                "doctrine/orm": "^2.8 | 3.0",
++                "phpstan/phpstan": "^1.10",
++                "symfony/debug-bundle": "^5.4|^6.0|^7.0",
++                "symfony/expression-language": "^5.4|^6.0|^7.0",
++                "symfony/form": "^5.4|^6.0|^7.0",
++                "symfony/framework-bundle": "^5.4|^6.0|^7.0",
++                "symfony/mercure-bundle": "^0.3.7",
++                "symfony/messenger": "^5.4|^6.0|^7.0",
++                "symfony/panther": "^1.0|^2.0",
++                "symfony/phpunit-bridge": "^5.4|^6.0|^7.0",
++                "symfony/process": "^5.4|6.3.*|^7.0",
++                "symfony/property-access": "^5.4|^6.0|^7.0",
++                "symfony/security-core": "^5.4|^6.0|^7.0",
++                "symfony/stopwatch": "^5.4|^6.0|^7.0",
++                "symfony/twig-bundle": "^5.4|^6.0|^7.0",
++                "symfony/web-profiler-bundle": "^5.4|^6.0|^7.0",
++                "symfony/webpack-encore-bundle": "^2.1.1"
++            },
++            "default-branch": true,
++            "type": "symfony-bundle",
++            "extra": {
++                "thanks": {
++                    "name": "symfony/ux",
++                    "url": "https://github.com/symfony/ux"
++                }
++            },
++            "autoload": {
++                "psr-4": {
++                    "Symfony\\UX\\Turbo\\": "src/"
++                }
++            },
++            "notification-url": "https://packagist.org/downloads/",
++            "license": [
++                "MIT"
++            ],
++            "authors": [
++                {
++                    "name": "Kévin Dunglas",
++                    "email": "kevin@dunglas.fr"
++                },
++                {
++                    "name": "Symfony Community",
++                    "homepage": "https://symfony.com/contributors"
++                }
++            ],
++            "description": "Hotwire Turbo integration for Symfony",
++            "homepage": "https://symfony.com",
++            "keywords": [
++                "hotwire",
++                "javascript",
++                "mercure",
++                "symfony-ux",
++                "turbo",
++                "turbo-stream"
++            ],
++            "support": {
++                "source": "https://github.com/symfony/ux-turbo/tree/v2.13.2"
++            },
++            "funding": [
++                {
++                    "url": "https://symfony.com/sponsor",
++                    "type": "custom"
++                },
++                {
++                    "url": "https://github.com/fabpot",
++                    "type": "github"
++                },
++                {
++                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
++                    "type": "tidelift"
++                }
++            ],
++            "time": "2023-11-11T01:20:31+00:00"
++        },
+         {
+             "name": "symfony/validator",
+             "version": "6.4.x-dev",
+@@ -7170,6 +7267,7 @@
+         "symfony/security-csrf": 20,
+         "symfony/stimulus-bundle": 20,
+         "symfony/twig-bundle": 20,
++        "symfony/ux-turbo": 20,
+         "symfony/validator": 20,
+         "symfony/yaml": 20,
+         "symfonycasts/tailwind-bundle": 20,
+diff --git a/config/bundles.php b/config/bundles.php
+index 760e93b..e31c8c7 100644
+--- a/config/bundles.php
++++ b/config/bundles.php
+@@ -17,4 +17,5 @@ return [
+     TalesFromADev\Twig\Extra\Tailwind\Bridge\Symfony\Bundle\TalesFromADevTwigExtraTailwindBundle::class => ['all' => true],
+     TalesFromADev\FlowbiteBundle\FlowbiteBundle::class => ['all' => true],
+     Symfony\UX\StimulusBundle\StimulusBundle::class => ['all' => true],
++    Symfony\UX\Turbo\TurboBundle::class => ['all' => true],
+ ];
+diff --git a/importmap.php b/importmap.php
+index 6023f8e..2df4888 100644
+--- a/importmap.php
++++ b/importmap.php
+@@ -27,4 +27,7 @@ return [
+     '@symfony/stimulus-bundle' => [
+         'path' => './vendor/symfony/stimulus-bundle/assets/dist/loader.js',
+     ],
++    '@hotwired/turbo' => [
++        'version' => '7.3.0',
++    ],
+ ];
+diff --git a/symfony.lock b/symfony.lock
+index 957ed83..306ff01 100644
+--- a/symfony.lock
++++ b/symfony.lock
+@@ -172,6 +172,9 @@
+             "templates/base.html.twig"
+         ]
+     },
++    "symfony/ux-turbo": {
++        "version": "2.x-dev"
++    },
+     "symfony/validator": {
+         "version": "6.4",
+         "recipe": {
