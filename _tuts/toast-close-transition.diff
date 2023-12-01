@@ -1,0 +1,23 @@
+diff --git a/assets/controllers/closeable_controller.js b/assets/controllers/closeable_controller.js
+index 4345d10..e868d4b 100644
+--- a/assets/controllers/closeable_controller.js
++++ b/assets/controllers/closeable_controller.js
+@@ -1,7 +1,17 @@
+ import { Controller } from '@hotwired/stimulus';
++import { useTransition } from 'stimulus-use';
+ 
+ export default class extends Controller {
++    connect() {
++        useTransition(this, {
++            leaveActive: 'transition ease-in duration-200',
++            leaveFrom: 'opacity-100',
++            leaveTo: 'opacity-0',
++            transitioned: true,
++        })
++    }
++
+     close() {
+-        this.element.remove();
++        this.leave();
+     }
+ }
