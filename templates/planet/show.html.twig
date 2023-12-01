@@ -6,6 +6,7 @@
 <div class="m-4 p-4 bg-gray-800 rounded-lg">
     <h1 class="text-xl font-semibold text-white mb-4">Planet</h1>
 
+    <turbo-frame id="planet-info">
     <table class="min-w-full bg-gray-800 text-white">
         <tbody class="bg-gray-700 divide-y divide-gray-600">
             <tr>
@@ -31,6 +32,7 @@
             </tr>
         </tbody>
     </table>
+    </turbo-frame>
 
     <div class="flex space-x-4 mt-4">
         <a href="{{ path('app_planet_index') }}" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700">
