@@ -1,0 +1,110 @@
+{
+    "steps": [
+        {
+            "id": "start",
+            "name": "start",
+            "description": null
+        },
+        {
+            "id": "assetmapper-install-it",
+            "name": "AssetMapper: Install it",
+            "description": null
+        },
+        {
+            "id": "assetmapper-copy-images",
+            "name": "AssetMapper: Copy images",
+            "description": null
+        },
+        {
+            "id": "assetmapper-img-for-logo",
+            "name": "AssetMapper: Img for logo",
+            "description": null
+        },
+        {
+            "id": "assetmapper-install-asset-component",
+            "name": "AssetMapper: Install Asset component",
+            "description": null
+        },
+        {
+            "id": "modules-create-greeting-js-and-use",
+            "name": "Modules: Create greeting.js & use",
+            "description": null
+        },
+        {
+            "id": "modules-move-greeting-to-app-js",
+            "name": "Modules: Move greeting to app.js",
+            "description": null
+        },
+        {
+            "id": "3rdparty-use-js-confetti",
+            "name": "3rdParty: Use js-confetti",
+            "description": null
+        },
+        {
+            "id": "3rdparty-install-js-confetti",
+            "name": "3rdParty: Install js-confetti",
+            "description": null
+        },
+        {
+            "id": "css-add-and-use-alien-css",
+            "name": "Css: Add & use alien.css",
+            "description": null
+        },
+        {
+            "id": "css-delay-css",
+            "name": "Css: Delay CSS",
+            "description": null
+        },
+        {
+            "id": "tailwind-install-bundle",
+            "name": "Tailwind: install bundle",
+            "description": null
+        },
+        {
+            "id": "tailwind-tailwind-init",
+            "name": "Tailwind: tailwind:init",
+            "description": null
+        },
+        {
+            "id": "tailwind-use-it-in-h1",
+            "name": "Tailwind: use it in h1",
+            "description": null
+        },
+        {
+            "id": "tailwind-paste-in-templates",
+            "name": "Tailwind: Paste in templates",
+            "description": null
+        },
+        {
+            "id": "tailwind-install-form-theme-bundle",
+            "name": "Tailwind: Install form theme bundle",
+            "description": null
+        },
+        {
+            "id": "tailwind-finish-bundle-setup",
+            "name": "Tailwind: Finish bundle setup",
+            "description": null
+        },
+        {
+            "id": "stimulus-install-bundle",
+            "name": "Stimulus: Install bundle",
+            "description": null
+        },
+        {
+            "id": "stimulus-remove-ux-function",
+            "name": "Stimulus: remove ux function",
+            "description": null
+        },
+        {
+            "id": "stimulus-add-celebrate-controller-js",
+            "name": "Stimulus: Add celebrate_controller.js",
+            "description": null
+        },
+        {
+            "id": "stimulus-use-controller",
+            "name": "Stimulus: Use controller",
+            "description": null
+        }
+    ],
+    "sha": "a259a157a69d6e4755b20e594aa0ec9c5e067c76"
+}
