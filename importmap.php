@@ -30,4 +30,7 @@ return [
     '@hotwired/turbo' => [
         'version' => '8.0.0-beta.1',
     ],
+    'debounce' => [
+        'version' => '2.0.0',
+    ],
 ];
