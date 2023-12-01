@@ -1,0 +1,31 @@
+diff --git a/src/Twig/Components/Button.php b/src/Twig/Components/Button.php
+index 701608e..2ac8baa 100644
+--- a/src/Twig/Components/Button.php
++++ b/src/Twig/Components/Button.php
+@@ -8,4 +8,14 @@ use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
+ class Button
+ {
+     public string $variant = 'default';
++
++    public function variantClasses(): string
++    {
++        return match ($this->variant) {
++            'default' => 'text-white bg-blue-500 hover:bg-blue-700',
++            'success' => 'text-white bg-green-600 hover:bg-green-700',
++            'danger' => 'text-white bg-red-600 hover:bg-red-700 focus:ring-4 focus:ring-red-300 focus:outline-none',
++            default => throw new \LogicException(sprintf('Unknown button type "%s"', $this->variant)),
++        };
++    }
+ }
+diff --git a/templates/components/Button.html.twig b/templates/components/Button.html.twig
+index 1bcce76..6d55734 100644
+--- a/templates/components/Button.html.twig
++++ b/templates/components/Button.html.twig
+@@ -1,6 +1,5 @@
+ <button {{ attributes.defaults({
+-    class: 'border border-transparent text-sm font-medium rounded-md text-white bg-green-600 hover:bg-green-700'
++    class: 'border border-transparent text-sm font-medium rounded-md '~this.variantClasses
+ }) }}>
+-    {{ variant }}
+     {% block content %}{% endblock %}
+ </button>
