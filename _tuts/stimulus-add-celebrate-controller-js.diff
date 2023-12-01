@@ -1,0 +1,29 @@
+diff --git a/assets/app.js b/assets/app.js
+index 22245a7..72a3b50 100644
+--- a/assets/app.js
++++ b/assets/app.js
+@@ -7,9 +7,6 @@ import './bootstrap.js';
+  */
+ import './styles/app.css'
+ import greet from './lib/greeting.js';
+-import JSConfetti from 'js-confetti';
+ 
+ greet('Ryan');
+-const confetti = new JSConfetti();
+-confetti.addConfetti();
+ console.log('This log comes from assets/app.js - welcome to AssetMapper! 🎉')
+diff --git a/assets/controllers/celebrate_controller.js b/assets/controllers/celebrate_controller.js
+new file mode 100644
+index 0000000..63bc49e
+--- /dev/null
++++ b/assets/controllers/celebrate_controller.js
+@@ -0,0 +1,9 @@
++import { Controller } from '@hotwired/stimulus';
++import JSConfetti from 'js-confetti';
++
++export default class extends Controller {
++    poof() {
++        const confetti = new JSConfetti();
++        confetti.addConfetti();
++    }
++}
