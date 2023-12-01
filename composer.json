@@ -23,6 +23,7 @@
         "symfony/validator": "6.4.x-dev",
         "symfony/yaml": "6.4.x-dev",
         "symfonycasts/tailwind-bundle": "dev-main",
+        "tales-from-a-dev/flowbite-bundle": "dev-main",
         "twig/extra-bundle": "^2.12|^3.0",
         "twig/twig": "^2.12|^3.0"
     },
@@ -73,7 +74,7 @@
     },
     "extra": {
         "symfony": {
-            "allow-contrib": false,
+            "allow-contrib": true,
             "require": "6.4.*",
             "docker": true
         }
