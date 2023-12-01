@@ -22,6 +22,7 @@
         "symfony/twig-bundle": "6.4.x-dev",
         "symfony/validator": "6.4.x-dev",
         "symfony/yaml": "6.4.x-dev",
+        "symfonycasts/tailwind-bundle": "dev-main",
         "twig/extra-bundle": "^2.12|^3.0",
         "twig/twig": "^2.12|^3.0"
     },
