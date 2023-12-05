@@ -1,10 +1,10 @@
 diff --git a/importmap.php b/importmap.php
-index 4a1d0ac..dccaa84 100644
+index a47cbab..b548aa7 100644
 --- a/importmap.php
 +++ b/importmap.php
-@@ -30,4 +30,7 @@ return [
-     '@hotwired/turbo' => [
-         'version' => '8.0.0-beta.1',
+@@ -33,4 +33,7 @@ return [
+     'debounce' => [
+         'version' => '2.0.0',
      ],
 +    'stimulus-use' => [
 +        'version' => '0.52.1',
