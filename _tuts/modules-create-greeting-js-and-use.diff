@@ -8,10 +8,10 @@ index 0000000..598dbe7
 +    console.log(`Hello ${Ryan}!`);
 +}
 diff --git a/templates/base.html.twig b/templates/base.html.twig
-index 4c35aad..b4a68fd 100644
+index 56a9fe3..b4a68fd 100644
 --- a/templates/base.html.twig
 +++ b/templates/base.html.twig
-@@ -10,10 +10,15 @@
+@@ -10,6 +10,11 @@
  
          {% block javascripts %}
              {{ importmap('app') }}
@@ -23,8 +23,3 @@ index 4c35aad..b4a68fd 100644
          {% endblock %}
      </head>
      <body>
--    <img src="{{ asset('images/logo.png') }}"s>
-+    <img src="{{ asset('images/logo.png') }}">
-         {% block body %}{% endblock %}
-     </body>
- </html>

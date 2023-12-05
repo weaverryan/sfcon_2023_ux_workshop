@@ -1,0 +1,15 @@
+diff --git a/templates/voyage/index.html.twig b/templates/voyage/index.html.twig
+index 2964a10..b2bf07a 100644
+--- a/templates/voyage/index.html.twig
++++ b/templates/voyage/index.html.twig
+@@ -6,6 +6,10 @@
+ <div class="m-4 p-4 bg-gray-800 rounded-lg">
+     <div class="flex justify-between">
+         <h1 class="text-xl font-semibold text-white mb-4">Voyages</h1>
++
++        <a href="{{ path('app_voyage_new') }}" data-turbo-frame="modal">
++            New Voyage +
++        </a>
+     </div>
+ 
+     <table class="min-w-full bg-gray-800 text-white">

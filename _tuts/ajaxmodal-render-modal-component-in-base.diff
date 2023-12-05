@@ -1,0 +1,14 @@
+diff --git a/templates/base.html.twig b/templates/base.html.twig
+index 94909e9..48e051c 100644
+--- a/templates/base.html.twig
++++ b/templates/base.html.twig
+@@ -54,6 +54,8 @@
+             {{ include('_flashes.html.twig') }}
+         </div>
+ 
+-        <turbo-frame id="modal"></turbo-frame>
++        <twig:Modal>
++            <turbo-frame id="modal"></turbo-frame>
++        </twig:Modal>
+     </body>
+ </html>

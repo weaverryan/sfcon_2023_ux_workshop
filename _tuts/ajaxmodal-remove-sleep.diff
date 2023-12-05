@@ -1,0 +1,12 @@
+diff --git a/src/Controller/VoyageController.php b/src/Controller/VoyageController.php
+index ceb0b8c..3adad4b 100644
+--- a/src/Controller/VoyageController.php
++++ b/src/Controller/VoyageController.php
+@@ -26,7 +26,6 @@ class VoyageController extends AbstractController
+     #[Route('/new', name: 'app_voyage_new', methods: ['GET', 'POST'])]
+     public function new(Request $request, EntityManagerInterface $entityManager): Response
+     {
+-        sleep(1);
+         $voyage = new Voyage();
+         $form = $this->createForm(VoyageType::class, $voyage, [
+             'action' => $this->generateUrl('app_voyage_new'),

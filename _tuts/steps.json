@@ -299,7 +299,87 @@
             "id": "modal-submit-form-on-clase",
             "name": "Modal: Submit form on clase",
             "description": null
+        },
+        {
+            "id": "ajaxmodal-add-modal-container-to-base",
+            "name": "AjaxModal: Add modal container to base",
+            "description": null
+        },
+        {
+            "id": "ajaxmodal-new-link-targeting-modal",
+            "name": "AjaxModal: New link targeting modal",
+            "description": null
+        },
+        {
+            "id": "ajaxmodal-add-modal-frame-to-new-form",
+            "name": "AjaxModal: Add modal frame to new form",
+            "description": null
+        },
+        {
+            "id": "ajaxmodal-fix-form-action",
+            "name": "AjaxModal: Fix form action",
+            "description": null
+        },
+        {
+            "id": "ajaxmodal-add-modalbase-html-twig",
+            "name": "AjaxModal: Add modalBase.html.twig",
+            "description": null
+        },
+        {
+            "id": "ajaxmodal-render-modal-component-in-base",
+            "name": "AjaxModal: Render Modal component in base",
+            "description": null
+        },
+        {
+            "id": "ajaxmodal-add-observer-to-controller",
+            "name": "AjaxModal: Add observer to controller",
+            "description": null
+        },
+        {
+            "id": "ajaxmodal-return-a-stream-to-change-modal-content",
+            "name": "AjaxModal: Return a stream to change modal content",
+            "description": null
+        },
+        {
+            "id": "ajaxmodal-empty-modal-to-close-it",
+            "name": "AjaxModal: Empty modal to close it",
+            "description": null
+        },
+        {
+            "id": "ajaxmodal-stream-a-flash",
+            "name": "AjaxModal: Stream a flash",
+            "description": null
+        },
+        {
+            "id": "ajaxmodal-stream-empty-form",
+            "name": "AjaxModal: Stream empty form",
+            "description": null
+        },
+        {
+            "id": "ajaxmodal-stream-new-row",
+            "name": "AjaxModal: Stream new row",
+            "description": null
+        },
+        {
+            "id": "ajaxmodal-fade-in-row",
+            "name": "AjaxModal: Fade in row",
+            "description": null
+        },
+        {
+            "id": "ajaxmodal-add-loading-template",
+            "name": "AjaxModal: Add loading template",
+            "description": null
+        },
+        {
+            "id": "ajaxmodal-activating-loading",
+            "name": "AjaxModal: Activating loading",
+            "description": null
+        },
+        {
+            "id": "ajaxmodal-remove-sleep",
+            "name": "AjaxModal: Remove sleep",
+            "description": null
         }
     ],
-    "sha": "46519b595375912ebebde1ce7e5311e7e47abada"
+    "sha": "98164be90b971936b11d85a38d64b70ddf4bc263"
 }
