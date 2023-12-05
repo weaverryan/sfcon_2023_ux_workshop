@@ -33,4 +33,7 @@ return [
     'debounce' => [
         'version' => '2.0.0',
     ],
+    'stimulus-use' => [
+        'version' => '0.52.1',
+    ],
 ];
