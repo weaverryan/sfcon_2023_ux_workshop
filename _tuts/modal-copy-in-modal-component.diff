@@ -1,12 +1,13 @@
 diff --git a/templates/components/Modal.html.twig b/templates/components/Modal.html.twig
 new file mode 100644
-index 0000000..f0dc652
+index 0000000..177dbb7
 --- /dev/null
 +++ b/templates/components/Modal.html.twig
-@@ -0,0 +1,35 @@
+@@ -0,0 +1,36 @@
 +{% props
 +    allowSmallWidth=false,
 +    closeButton=false,
++    padding="p-5",
 +    fixedTop=false
 +%}
 +<div
@@ -22,7 +23,7 @@ index 0000000..f0dc652
 +        data-modal-target="dialog"
 +        data-action="close->modal#close"
 +    >
-+        <div class="flex grow">
++        <div class="flex grow {{ padding }}">
 +            <div class="grow overflow-auto p-1">
 +                <div data-modal-target="modalContent">
 +                    {% block content %}{% endblock %}

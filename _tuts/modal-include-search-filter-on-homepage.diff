@@ -1,0 +1,12 @@
+diff --git a/templates/main/homepage.html.twig b/templates/main/homepage.html.twig
+index 7640f19..7434753 100644
+--- a/templates/main/homepage.html.twig
++++ b/templates/main/homepage.html.twig
+@@ -30,6 +30,7 @@
+                         autofocus
+                         data-action="autosubmit#debouncedSubmit"
+                     >
++                    {{ include('main/_search_filters.html.twig') }}
+                 </div>
+ 
+                 <div class="whitespace-nowrap m-2 mr-4">{{ voyages|length }} results</div>
