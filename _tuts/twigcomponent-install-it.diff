@@ -145,7 +145,7 @@ index 0000000..fd17ac6
 +        # Namespace & directory for components
 +        App\Twig\Components\: 'components/'
 diff --git a/importmap.php b/importmap.php
-index dccaa84..850bd0b 100644
+index b548aa7..83bd057 100644
 --- a/importmap.php
 +++ b/importmap.php
 @@ -28,7 +28,7 @@ return [
@@ -155,8 +155,8 @@ index dccaa84..850bd0b 100644
 -        'version' => '8.0.0-beta.1',
 +        'version' => '7.3.0',
      ],
-     'stimulus-use' => [
-         'version' => '0.52.1',
+     'debounce' => [
+         'version' => '2.0.0',
 diff --git a/symfony.lock b/symfony.lock
 index 306ff01..f6cd208 100644
 --- a/symfony.lock
