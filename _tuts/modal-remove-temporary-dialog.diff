@@ -1,0 +1,21 @@
+diff --git a/templates/main/homepage.html.twig b/templates/main/homepage.html.twig
+index 183105e..7640f19 100644
+--- a/templates/main/homepage.html.twig
++++ b/templates/main/homepage.html.twig
+@@ -12,16 +12,6 @@
+         </aside>
+ 
+         <section class="flex-1 ml-10">
+-            <dialog>
+-                I am a dialog!
+-
+-                <form method="dialog">
+-                    <button>Close</button>
+-                </form>
+-            </dialog>
+-
+-            <button onclick="document.querySelector('dialog').showModal();">Open modal</button>
+-
+             <form
+                 method="GET"
+                 action="{{ path('app_homepage') }}"
