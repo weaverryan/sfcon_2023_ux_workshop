@@ -1,0 +1,36 @@
+{% props
+    allowSmallWidth=false,
+    closeButton=false,
+    padding="p-5",
+    fixedTop=false
+%}
+<div
+    {{ attributes.defaults({
+        'data-controller': 'modal',
+        'data-action': 'click->modal#clickOutside',
+    }) }}
+>
+    {% block trigger %}{% endblock %}
+
+    <dialog
+        class="open:flex bg-gray-800 rounded-lg shadow-xl inset-0 w-full md:w-fit md:max-w-[50%] {{ allowSmallWidth ? '' : 'md:min-w-[50%] ' }}animate-fade-in backdrop:bg-slate-600 backdrop:opacity-80{{ fixedTop ? ' mt-14' : '' }}"
+        data-modal-target="dialog"
+        data-action="close->modal#close"
+    >
+        <div class="flex grow {{ padding }}">
+            <div class="grow overflow-auto p-1">
+                <div data-modal-target="modalContent">
+                    {% block content %}{% endblock %}
+                </div>
+            </div>
+        </div>
+        {% if closeButton %}
+            <button
+                class="absolute right-4 top-3 text-white flex items-center opacity-70 transition-opacity hover:opacity-100"
+                data-action="modal#close"
+            >
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+            </button>
+        {% endif %}
+    </dialog>
+</div>
