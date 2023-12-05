@@ -10,10 +10,15 @@
 
         {% block javascripts %}
             {{ importmap('app') }}
+            <script type="module">
+                import greet from '{{ asset('lib/greeting.js') }}';
+
+                greet('Ryan');
+            </script>
         {% endblock %}
     </head>
     <body>
-    <img src="{{ asset('images/logo.png') }}"s>
+    <img src="{{ asset('images/logo.png') }}">
         {% block body %}{% endblock %}
     </body>
 </html>
