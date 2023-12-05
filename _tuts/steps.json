@@ -171,6 +171,21 @@
             "description": null
         },
         {
+            "id": "datatables-add-autosubmit-controller",
+            "name": "DataTables: Add autosubmit controller",
+            "description": null
+        },
+        {
+            "id": "datatables-use-it",
+            "name": "DataTables: use it",
+            "description": null
+        },
+        {
+            "id": "datatables-install-debounce",
+            "name": "DataTables: Install debounce",
+            "description": null
+        },
+        {
             "id": "toast-render-flashes-html-twig",
             "name": "Toast: Render _flashes.html.twig",
             "description": null
@@ -269,7 +284,22 @@
             "id": "modal-copy-in-modal-controller",
             "name": "Modal: Copy in modal controller",
             "description": null
+        },
+        {
+            "id": "modal-include-search-filter-on-homepage",
+            "name": "Modal: Include search filter on homepage",
+            "description": null
+        },
+        {
+            "id": "modal-render-modal-component",
+            "name": "Modal: Render Modal component",
+            "description": null
+        },
+        {
+            "id": "modal-submit-form-on-clase",
+            "name": "Modal: Submit form on clase",
+            "description": null
         }
     ],
-    "sha": "d187c2237fa4f1411e8ec7861726dddddbc79b4f"
+    "sha": "46519b595375912ebebde1ce7e5311e7e47abada"
 }
