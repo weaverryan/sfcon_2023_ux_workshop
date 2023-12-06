@@ -25,6 +25,7 @@
         "symfony/stimulus-bundle": "2.x-dev",
         "symfony/twig-bundle": "6.4.x-dev",
         "symfony/ux-turbo": "2.x-dev",
+        "symfony/ux-twig-component": "2.x-dev",
         "symfony/validator": "6.4.x-dev",
         "symfony/yaml": "6.4.x-dev",
         "symfonycasts/tailwind-bundle": "dev-main",
