@@ -1,4 +1,4 @@
-<tr class="even:bg-gray-700 odd:bg-gray-600">
+<tr class="even:bg-gray-700 odd:bg-gray-600 {{ animateIn|default ? 'animate-fade-in' : '' }}">
     <td class="px-6 py-4 whitespace-nowrap">{{ voyage.id }}</td>
     <td class="px-6 py-4">{{ voyage.purpose }}</td>
     <td class="px-6 py-4 whitespace-nowrap">{{ voyage.leaveAt ? voyage.leaveAt|date('Y-m-d H:i:s') : '' }}</td>

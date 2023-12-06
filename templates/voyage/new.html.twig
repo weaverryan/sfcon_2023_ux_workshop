@@ -32,6 +32,8 @@
     </turbo-stream>
 
     <turbo-stream action="prepend" targets="#voyage-crud-table tbody">
-        <template>{{ include('voyage/_row.html.twig') }}</template>
+        <template>{{ include('voyage/_row.html.twig', {
+            animateIn: true
+        }) }}</template>
     </turbo-stream>
 {% endblock %}
