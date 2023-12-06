@@ -26,6 +26,7 @@ class VoyageController extends AbstractController
     #[Route('/new', name: 'app_voyage_new', methods: ['GET', 'POST'])]
     public function new(Request $request, EntityManagerInterface $entityManager): Response
     {
+        sleep(1);
         $voyage = new Voyage();
         $form = $this->createForm(VoyageType::class, $voyage, [
             'action' => $this->generateUrl('app_voyage_new'),
