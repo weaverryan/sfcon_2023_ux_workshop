@@ -1,7 +1,5 @@
 {{ form_start(form) }}
     {{ form_widget(form) }}
 
-    {% component 'Button' %}
-        {% block content %}{{ button_label|default('Save') }}{% endblock %}
-    {% endcomponent %}
+    <twig:Button>{{ button_label|default('Save') }}</twig:Button>
 {{ form_end(form) }}
