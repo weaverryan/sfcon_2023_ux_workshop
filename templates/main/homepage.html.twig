@@ -40,6 +40,13 @@
                             >Options</twig:Button>
                         </twig:block>
                         {{ include('main/_search_filters.html.twig') }}
+
+                        <div class="flex justify-end">
+                            <twig:Button
+                                variant="success"
+                                data-action="modal#close"
+                            >See Results</twig:Button>
+                        </div>
                     </twig:Modal>
                 </div>
 
