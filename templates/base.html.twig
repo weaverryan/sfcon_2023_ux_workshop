@@ -59,6 +59,21 @@
                 id="modal"
                 data-modal-target="content"
             ></turbo-frame>
+            <twig:block name="loading_template">
+                <div class="bg-space-pattern bg-cover rounded-lg p-8">
+                    <div class="space-y-2">
+                        <div class="h-4 bg-gray-700 rounded w-3/4 animate-pulse"></div>
+                        <div class="h-4 bg-gray-700 rounded animate-pulse"></div>
+                        <div class="h-4 bg-gray-700 rounded animate-pulse"></div>
+                        <div class="h-4"></div>
+                        <div class="h-4 bg-gray-700 rounded animate-pulse"></div>
+                        <div class="h-4 bg-gray-700 rounded w-1/2 animate-pulse"></div>
+                        <div class="h-4 bg-gray-700 rounded w-3/4 animate-pulse"></div>
+                        <div class="h-4"></div>
+                        <div class="h-4 bg-gray-700 rounded w-1/2 animate-pulse"></div>
+                    </div>
+                </div>
+            </twig:block>
         </twig:Modal>
     </body>
 </html>
