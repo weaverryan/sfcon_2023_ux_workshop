@@ -10,6 +10,11 @@
 
         {% block javascripts %}
             {{ importmap('app') }}
+            <script type="module">
+                import greet from '{{ asset('lib/greeting.js') }}';
+
+                greet('Ryan');
+            </script>
         {% endblock %}
     </head>
     <body>
