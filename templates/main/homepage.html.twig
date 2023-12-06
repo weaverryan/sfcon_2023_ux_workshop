@@ -12,13 +12,15 @@
         </aside>
 
         <section class="flex-1 ml-10">
-            <dialog open>
+            <dialog>
                 I am a dialog!
 
                 <form method="dialog">
                     <button>Close</button>
                 </form>
             </dialog>
+
+            <button onclick="document.querySelector('dialog').showModal();">Open modal</button>
 
             <form
                 method="GET"
