@@ -6,6 +6,9 @@
  */
 import './styles/app.css'
 import greet from './lib/greeting.js';
+import JSConfetti from 'js-confetti';
 
 greet('Ryan');
+const confetti = new JSConfetti();
+confetti.addConfetti();
 console.log('This log comes from assets/app.js - welcome to AssetMapper! 🎉')
