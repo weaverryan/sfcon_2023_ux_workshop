@@ -10,6 +10,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\UX\Turbo\TurboBundle;
 
 #[Route('/voyage')]
 class VoyageController extends AbstractController
@@ -36,6 +37,16 @@ class VoyageController extends AbstractController
             $entityManager->flush();
 
             $this->addFlash('success', 'Bon voyage!');
+
+            if (TurboBundle::STREAM_FORMAT === $request->getPreferredFormat()) {
+                // If the request comes from Turbo, set the content type as text/vnd.turbo-stream.html and only send the HTML to update
+                $request->setRequestFormat(TurboBundle::STREAM_FORMAT);
+
+                return $this->renderBlock('voyage/new.html.twig', 'success_stream', [
+                    'form' => $form,
+                    'voyage' => $voyage,
+                ]);
+            }
 
             return $this->redirectToRoute('app_voyage_index', [], Response::HTTP_SEE_OTHER);
         }

@@ -21,3 +21,11 @@
         {{ include('voyage/_form.html.twig') }}
     </div>
 {% endblock %}
+
+{% block success_stream %}
+    <turbo-stream action="update" target="modal">
+        <template>
+            Please close me!
+        </template>
+    </turbo-stream>
+{% endblock %}
