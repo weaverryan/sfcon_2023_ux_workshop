@@ -30,4 +30,8 @@
     <turbo-stream action="append" target="flash-container">
         <template>{{ include('_flashes.html.twig') }}</template>
     </turbo-stream>
+
+    <turbo-stream action="prepend" targets="#voyage-crud-table tbody">
+        <template>{{ include('voyage/_row.html.twig') }}</template>
+    </turbo-stream>
 {% endblock %}
