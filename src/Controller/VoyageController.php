@@ -26,7 +26,9 @@ class VoyageController extends AbstractController
     public function new(Request $request, EntityManagerInterface $entityManager): Response
     {
         $voyage = new Voyage();
-        $form = $this->createForm(VoyageType::class, $voyage);
+        $form = $this->createForm(VoyageType::class, $voyage, [
+            'action' => $this->generateUrl('app_voyage_new'),
+        ]);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
